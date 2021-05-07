@@ -14,15 +14,36 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap"
     rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
-</head>
 
-<body class="bg-light">
+  <style>
+    * {font-family: 'Open Sans', sans-serif;}
+    .nav-item:hover a {
+      
+    color: #ffffff !important;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-top: -2px;
+    }
+
+    #infoBoard {
+      max-height: 85vh;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    overflow: scroll;
+    top: 6%;
+    }
+
+    .nav-item a { padding: 10px 45px; margin: 0 10px;  color: #ffffff !important;  letter-spacing: 1px; font-size: .7em;}
+    </style>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark py-3" id="nav2">
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark py-1" id="nav2">
       <div class="container px-4">
         <a class="navbar-brand" href="#"><img src="http://apptest.elevationng.org/bookyourseat/assets/main/img/logo.png"
             class="img-fluid" /></a>
@@ -32,20 +53,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+           
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="https://onlinechurch.elevationng.org/adult">Adult</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="https://onlinechurch.elevationng.org/teenz">Teenagers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="https://zoom.us/j/918751152">Pre-Teens(10-12Yrs)</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="https://onlinechurch.elevationng.org/seeds">Children (2-9Yrs)</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="https://onlinechurch.elevationng.org/radio">Radio Channel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Connect with us</a>
             </li>
           </ul>
         </div>
@@ -54,79 +79,224 @@
   </header>
 
   <main>
-    <div class="container py-4 mt-3">
-      <header class="pb-3 mb-4 border-bottom">
+    <div class="container py-4 my-4">
+      <header class="mb-2">
         <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img">
-            <title>Bootstrap</title>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
-              fill="currentColor"></path>
-          </svg>
+        
           <span class="fs-4">Online Church</span>
         </a>
       </header>
 
-      <div class="bg-light p-0 border rounded-3 mb-5">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/videoseries?list=PLvUOrmHJ07SS5ry33GOPzawto4uVDxt4l"
-            title="YouTube video" allowfullscreen></iframe>
-        </div>
+      <div class="row d-block d-md-none">
+      <div class="col-7 offset-5 my-3">
+      <a href="#info" class="btn btn-md btn-secondary w-100"> View Information Board</a>
+    </div>
       </div>
 
-      <div class="row align-items-md-stretch">
-        <div class="h-100 col-md-4">
-          <div class="h-50 p-5 text-white bg-dark rounded-3">
-            <h2>Lorem Ipsum</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <button class="btn btn-outline-light" type="button">
-              Example button
-            </button>
+      <div class="row mb-5 g-5">
+        <div class="bg-white p-0 rounded-3 mb-5 col-md-8">
+          <div class="ratio ratio-21x9 mb-4">
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLvUOrmHJ07SS5ry33GOPzawto4uVDxt4l"
+              title="YouTube video" allowfullscreen></iframe>
+          </div>
+          <div class="container mb-3">
+          <div class="row  d-flex d-md-none text-center">
+            <div class="col-6 mt-3">
+              <a href="https://onlinechurch.elevationng.org/adul" class="btn btn-primary btn-md w-100" >Adult</a>
+            </div>
+            <div class="col-6 mt-3">
+              <a href="https://onlinechurch.elevationng.org/teenz" class="btn btn-warning btn-md w-100" >Teenagers</a>
+            </div>
+            <div class="col-6 mt-3">
+              <a href="https://onlinechurch.elevationng.org/seeds" class="btn btn-danger btn-md w-100" >Children</a>
+            </div>
+            <div class="col-6 mt-3">
+              <a href="https://zoom.us/j/918751152" class="btn btn-success btn-md w-100" >Pre-Teens</a>
+            </div>
+            <div class="col-6 mt-3">
+              <a href="https://mixlr.com/elevation-ng" class="btn btn-info btn-md w-100" >Radio Channel</a>
+            </div>
+            <div class="col-6 mt-3">
+              <a href="#" class="btn btn-secondary btn-md w-100" >Connect with us</a>
+            </div>
           </div>
         </div>
-        <div class="h-100 col-md-4">
-          <div class="h-50 p-5 bg-light border rounded-3">
-            <h2>Lorem Ipsum</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+
+          <div class="row align-items-md-stretch mt-0 g-5">
+
+            <!-- <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://onlinechurch.elevationng.org/assets/images/playlist_apr_4.png" style="height: 400px;" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+
+            <div class=" col-md-6 mt-3 mt-md-0" >
+               <img src="https://onlinechurch.elevationng.org/assets/images/thumbnail_PG.jpg" alt="Welcome"  style="max-height: 550px;"  class="w-100">  
+              
+              <!-- <div class="p-3 text-white bg-dark rounded-3">
+
+                <h2>Service Times</h2>
+                <div class="my-4">
+                  <h5 class=" py-3"><span class="font-weight-bolder py-3">Sundays : </span> 7AM, 9AM, 11AM, 4PM, 7PM GMT+1</h5>
+                <h5 class=" py-3"><span class="font-weight-bolder py-3">Mondays : </span> 5PM GMT+1 </h5>
+                </div>
+              
+              </div> -->
+            </div>
+            <div class="col-md-6 mt-3 mt-md-0 text-right ">
+              <img src="https://onlinechurch.elevationng.org/assets/images/playlist_apr_4.png" style="max-height: 550px; width: 100%;" alt="...">
+
+             
+                <!-- <div class="row g-0">
+                  <div class="col-md-6">
+                    
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div> -->
+             
+
+              <!-- <div class="col">
+                <div class="shadow-sm row g-0 border rounded overflow-hidden flex-md-row">                  
+                    <div class="col-sm-4 col-xs-4 col-4 col-md-12 p-0 order-sm-8 order-xs-8 image-container ">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height=""
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c" />
+                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                    </svg>
+                    </div>
+                    <div class="col-sm-7 col-xs-7 col-7 col-md-12 card-body">
+                        <h3 class="fw-bold">Book Club with Maggie O'Farrell</h3>
+                        <h6 class="my-3">Thur 22 Apr 2021 19:00WAT</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">
+                                    Edit
+                                </button>
+                            </div>             
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+             
+
+
+              <!-- <div class="p-3 h-100 bg-light border rounded-3" style=" background: url('https://onlinechurch.elevationng.org/assets/images/playlist_apr_4.png') no-repeat top center/contain;" >
+                <h2>Worship Playlist</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <button class="btn btn-outline-secondary" type="button">
-              Example button
-            </button>
+              nisi ut aliquip ex
+                </p>
+                <button class="btn btn-outline-secondary" type="button">
+                  Play 
+                </button>
+                <span id="info"></span>
+              </div> -->
+            </div> 
+          
           </div>
         </div>
-        <div class="h-100 col-md-4">
-          <div class="h-50 p-5 bg-light border rounded-3">
-            <h2>Lorem Ipsum</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <button class="btn btn-outline-secondary" type="button">
-              Example button
-            </button>
+        div
+        <div class="col-md-4" id="infoBoard">
+          <div class="h-100 p-4 bg-light border border-2 rounded-3 shadow" style="overflow: hidden; position: relative;">
+            <div class="">
+              <h2>Information Board</h2>
+            <hr/>
+            </div>
+            
+            <div class="text-left h-100" style=" height: 95%; overflow-y: scroll;">
+          
+              <div class="mb-3">
+              <h5>GUEST</h5>
+              <span>
+               We are excited to have you here. Please take your time fill this form to receive more information about us, our services, and programs. <a target="_blank" href="https://bit.ly/TECGuestForm"> https://bit.ly/TECGuestForm. </a>
+               </span>
+               </div>
+              
+               <div class="mb-3">
+              <h5>ABOUT SMALL GROUPS</h5>
+    
+              <span>We invite you to join our virtual community online. Should you decide to honor our invitation, please send an email to smallgroups@elevationng.org or send your name and WhatsApp enabled number and location to this WhatsApp number +234 904 403 3577. </span>
+    
+               </div>
+    
+              
+                 <div class="mb-3">
+              <h5>NEED COUNSELLING?</h5>
+              <span>Do not carry that burden alone! Have some counsel and pray with you on any issue, click here <a target="_blank" href=" https://bit.ly/TECCounsellingRequest"> https://bit.ly/TECCounsellingRequest</a> to make that request or visit <a target="_blank" href="https://elevationng.org/counselling"> https://elevationng.org/counselling</a>.  </span>
+               </div>
+    
+                 <div class="mb-3">
+              <h5>PRAYERS</h5>
+              <span>Do you have a prayer request? Or you want our team to join you in Prayers, click here <a target="_blank" href="http://bit.ly/TEC-OnlinePrayerRequest"> http://bit.ly/TEC-OnlinePrayerRequest </a> and you will have someone pray with you.  </span>
+    
+              <br><br><span>Men ought always to pray and not to faint, join our morning prayer meetings online. Mondays to Saturdays at 6am – 7am WAT (GMT+1) on zoom. <a target="_blank" href="https://bit.ly/TECMorningPrayers "></a> https://bit.ly/TECMorningPrayers </span>
+               </div>
+    
+    
+                  <div class="mb-3">
+              <h5>WANT TO KNOW ABOUT JESUS?</h5>
+              <span>Would you like us to take you to Jesus? or you would you like to reaffirm your commitment and rededicate your life Jesus? Click here <a target="_blank" href="https://bit.ly/JustDecidedForJesus"> https://bit.ly/JustDecidedForJesus </a> and someone will guide you through this process.     </span>  
+    
+              </div>
+              
+                <div class="mb-3">
+              <h5>ONLINE MEMBERSHIP CLASSES </h5>
+              <span>To become a member of The Elevation Online Church, register join our membership Class here: 
+              <br>  08:00 WAT (GMT+1) Classes:<a target="_blank" href="http://bit.ly/TECOnlineChurchMC-8amWAT">http://bit.ly/TECOnlineChurchMC-8amWAT</a> 
+              <br> 14:00 WAT (GMT+1) Classes: <a target="_blank" href="http://bit.ly/TECOnlineChurchMC-2pmWAT ">http://bit.ly/TECOnlineChurchMC-2pmWAT </a> 
+               </span>  
+    
+              </div>
+    
+                 <div class="mb-3">
+              <h5>ONLINE MATURITY COURSES </h5>
+              <span>
+                We also have our maturity classes designed to help you grow in your understanding on specific subjects in the kingdom of God. Starts February 13, 2021. Join any of the classes of your choice here: 
+                <br><br> • Understanding the ministry of the Holy Spirit. – <a target="_blank" href="https://bit.ly/UTMOTHS">https://bit.ly/UTMOTHS  </a> 
+               <br><br> • The fundamentals of a constant devotional life. –   <a target="_blank" href="https://bit.ly/TFOACDL">https://bit.ly/TFOACDL </a> 
+               <br><br> • Cultivating unwavering Faith. – <a target="_blank" href="https://bit.ly/CUFaith ">https://bit.ly/CUFaith </a>  
+               <br><br> • Understanding Spiritual Warfare. – <a target="_blank" href="https://bit.ly/USWarfare">https://bit.ly/USWarfare</a> 
+               <br><br> • Strengthening your Prayer Altar. – <a target="_blank" href="https://bit.ly/SYPAltar ">https://bit.ly/SYPAltar </a> 
+    
+               </span>  
+    
+              </div>
+    
+              
+             
+              
+            
+            </div>
           </div>
         </div>
       </div>
+      
+
+     <div class="row my-5">
+     </div>
 
     </div>
   </main>
